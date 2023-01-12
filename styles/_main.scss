@@ -1,0 +1,64 @@
+
+.main-body {
+    height: 100vh;
+}
+
+.like-dislike-sec {
+    @include grid(1fr 1fr, 50px);
+    @include f18;
+
+    ul {
+        @include flex(row, 50px);
+        list-style: none;
+
+        li {
+            @include flex(row, 20px);
+            align-items: center;
+        }
+    }
+
+    > div {
+        i {
+            font-size: 40px;
+        }
+    }
+
+    p {
+        margin: 100px 0px 50px 0px;
+        width: 500px;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+.tiktok-vid {
+    @include flex(column, 0px);
+    overflow: auto;
+    height: calc(100vh - 50px);
+
+    button {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: none;
+    }
+
+    i {
+        font-size: 40px;
+    }
+
+    article {
+        position: relative;
+        width: 400px;
+
+        div {
+            @include flex(row, 50px);
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

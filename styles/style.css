@@ -107,6 +107,104 @@
   display: none;
 }
 
+.main-body {
+  height: 100vh;
+}
+
+.like-dislike-sec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.like-dislike-sec ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 50px;
+  list-style: none;
+}
+
+.like-dislike-sec ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.like-dislike-sec > div i {
+  font-size: 40px;
+}
+
+.like-dislike-sec p {
+  margin: 100px 0px 50px 0px;
+  width: 500px;
+}
+
+.like-dislike-sec video {
+  width: 100%;
+}
+
+.tiktok-vid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+  overflow: auto;
+  height: calc(100vh - 50px);
+}
+
+.tiktok-vid button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+}
+
+.tiktok-vid i {
+  font-size: 40px;
+}
+
+.tiktok-vid article {
+  position: relative;
+  width: 400px;
+}
+
+.tiktok-vid article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 50px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 * {
   margin: 0px;
   padding: 0px;
