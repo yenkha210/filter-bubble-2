@@ -8,7 +8,6 @@ Bron: https://benfrain.com/automatically-play-and-pause-video-as-it-enters-and-l
 Play video's when video is on screen. Volume doesn't work
 */
 
-
 // Poging 1
 // Like button
 // Bron: https://codepen.io/xiao-nan-pols/pen/mdKZwoj
@@ -59,7 +58,16 @@ likeBtns.forEach(button => {
 
 // Lelijke versie die je 4x moet herhalen
 const like1 = document.querySelector("#like-1");
+const dislike1 = document.querySelector("#dislike-1");
+
 function likeActive() {
-    like1.classList.add("likeActive");
+    like1.classList.add("active");
+    dislike1.classList.remove("active");
 };
 like1.addEventListener("click", likeActive);
+
+function dislikeActive() {
+    dislike1.classList.add("active");
+    like1.classList.remove("active");
+};
+dislike1.addEventListener("click", dislikeActive);

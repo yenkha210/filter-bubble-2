@@ -179,6 +179,7 @@
   height: 80px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .tiktok-vid i {
@@ -239,7 +240,7 @@ a {
   display: none;
 }
 
-.likeActive {
+.active {
   background-color: #ff0050;
 }
 /*# sourceMappingURL=style.css.map */
