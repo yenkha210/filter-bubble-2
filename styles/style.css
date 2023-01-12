@@ -158,6 +158,7 @@
 
 .like-dislike-sec video {
   width: 100%;
+  border-radius: 5px;
 }
 
 .tiktok-vid {
@@ -199,7 +200,7 @@
           flex-direction: row;
   gap: 50px;
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -236,5 +237,9 @@ a {
 
 .none {
   display: none;
+}
+
+.likeActive {
+  background-color: #ff0050;
 }
 /*# sourceMappingURL=style.css.map */
