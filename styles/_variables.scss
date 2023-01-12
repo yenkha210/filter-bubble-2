@@ -1,0 +1,61 @@
+$font-stack: 'Manrope', sans-serif;
+
+$black: black;
+$gray-dark: #272727;
+$white: white;
+$pink: #ff0050;
+$blue: #00f2ea;
+$yellow: #F9C600;
+
+$border5: 5px;
+$trans4: .4s;
+
+
+@mixin f42 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+@mixin f34 {
+    font-size: 34px;
+    line-height: 37px;
+}
+
+@mixin f26 {
+    font-size: 26px;
+    line-height: 31px;
+}
+
+@mixin f18 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@mixin flex($direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin btn1 {
+    @include f18;
+    font-weight: bold;
+    padding: 25px 30px;
+    border-radius: $border5;
+    width: fit-content;
+    background-color: $pink;
+    color: $white;
+    border: 3px solid $pink;
+    transition: $trans4;
+
+    &:hover {
+        background-color: transparent;
+        color: $pink;
+    }
+}
+
+@mixin grid($clmn, $gap) {
+    display: grid;
+    grid-template-columns: $clmn;
+    gap: $gap;
+}

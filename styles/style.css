@@ -1,1 +1,142 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.index-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 0px;
+  height: 100vh;
+}
+
+.logo {
+  height: 110px;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 500px;
+  margin-top: 80px;
+}
+
+.header-content a {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 25px 30px;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ff0050;
+  color: white;
+  border: 3px solid #ff0050;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+}
+
+.header-content a:hover {
+  background-color: transparent;
+  color: #ff0050;
+}
+
+.header-content p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.uitleg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  margin-top: -50px;
+  padding: 50px 0px;
+  overflow: auto;
+  color: black;
+}
+
+.uitleg article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 10px solid #00f2ea;
+}
+
+.uitleg article:nth-of-type(2) {
+  border: 10px solid #ff0050;
+}
+
+.uitleg img {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  width: 100%;
+  height: 370px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.uitleg p {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.uitleg::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: black;
+  padding: 50px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.none {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

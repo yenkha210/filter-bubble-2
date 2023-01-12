@@ -1,2 +1,35 @@
 @import "./variables";
+@import "./index";
 @import "./breakpoints";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    background-color: $black;
+    padding: 50px;
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+.none {
+    display: none;
+}
