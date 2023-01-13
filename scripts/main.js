@@ -12,6 +12,7 @@ Play video's when video is on screen. Volume doesn't work
 // Like button
 // Bron: https://codepen.io/xiao-nan-pols/pen/mdKZwoj
 // If button clicked, all like btns get pink. Iets doen met de clicked button
+
 /*
 const likeBtns = document.querySelectorAll("#like");
 
@@ -19,7 +20,7 @@ function likeActive(buttonPressed, whichButton) {
     //let allLikeBtns = document.querySelectorAll("#like");
 
     likeBtns.forEach(item => {
-        item.classList.add("likeActive");
+        item.classList.add("active");
     });
 };
 
@@ -57,7 +58,7 @@ likeBtns.forEach(button => {
 */
 
 // Lelijke versie die je 4x moet herhalen
-/*
+
 const like1 = document.querySelector("#like-1");
 const dislike1 = document.querySelector("#dislike-1");
 
@@ -72,10 +73,11 @@ function dislikeActive() {
     like1.classList.remove("active");
 };
 dislike1.addEventListener("click", dislikeActive);
-*/
+
 
 // Filter voor knoppen https://www.youtube.com/watch?v=OeMuUKedtPc&ab_channel=CodingNepal
 // Like buton is al active
+/*
 const filterItem = document.querySelector(".tiktok-vid div");
 window.onload = () => {
   filterItem.onclick = selectedItem => {
@@ -85,3 +87,4 @@ window.onload = () => {
     }
   };
 };
+*/
