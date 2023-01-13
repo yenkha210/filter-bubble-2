@@ -57,6 +57,7 @@ likeBtns.forEach(button => {
 */
 
 // Lelijke versie die je 4x moet herhalen
+/*
 const like1 = document.querySelector("#like-1");
 const dislike1 = document.querySelector("#dislike-1");
 
@@ -71,3 +72,16 @@ function dislikeActive() {
     like1.classList.remove("active");
 };
 dislike1.addEventListener("click", dislikeActive);
+*/
+
+// Filter voor knoppen https://www.youtube.com/watch?v=OeMuUKedtPc&ab_channel=CodingNepal
+// Like buton is al active
+const filterItem = document.querySelector(".tiktok-vid div");
+window.onload = () => {
+  filterItem.onclick = selectedItem => {
+    if (selectedItem.target.classList.contains("btn")) {
+      filterItem.querySelector(".active").classList.remove("active");
+      selectedItem.target.classList.add("active");
+    }
+  };
+};

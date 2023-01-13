@@ -174,6 +174,10 @@
   height: calc(100vh - 50px);
 }
 
+.tiktok-vid i {
+  font-size: 40px;
+}
+
 .tiktok-vid button {
   width: 80px;
   height: 80px;
@@ -182,8 +186,8 @@
   cursor: pointer;
 }
 
-.tiktok-vid i {
-  font-size: 40px;
+.tiktok-vid .active {
+  background-color: #ff0050;
 }
 
 .tiktok-vid article {
@@ -238,9 +242,5 @@ a {
 
 .none {
   display: none;
-}
-
-.active {
-  background-color: #ff0050;
 }
 /*# sourceMappingURL=style.css.map */

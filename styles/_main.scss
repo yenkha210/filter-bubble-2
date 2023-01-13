@@ -39,6 +39,10 @@
     overflow: auto;
     height: calc(100vh - 50px);
 
+    i {
+        font-size: 40px;
+    }
+
     button {
         width: 80px;
         height: 80px;
@@ -46,9 +50,9 @@
         border: none;
         cursor: pointer;
     }
-
-    i {
-        font-size: 40px;
+    
+    .active {
+        background-color: $pink;
     }
 
     article {
