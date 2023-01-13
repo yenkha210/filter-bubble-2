@@ -43,28 +43,8 @@
         font-size: 40px;
     }
 
-    button {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .active {
-        background-color: $pink;
-    }
-
     article {
         position: relative;
         width: 400px;
-
-        div {
-            @include flex(row, 50px);
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
     }
 }
