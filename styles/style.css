@@ -107,6 +107,14 @@
   display: none;
 }
 
+.neon {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  height: 150px;
+  opacity: 0.8;
+}
+
 .main-body {
   height: 100vh;
 }
