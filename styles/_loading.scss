@@ -1,0 +1,31 @@
+.loading {
+    @include flex(column, 30px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/loading-screen.svg) center no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    width: 500px;
+    border-radius: $border5;
+    background-color: $white;
+    padding: 20px;
+}
+
+.progress {
+    background-color: $black;
+    height: 35px;
+    border-radius: $border5;
+    width: 100%;
+}
+
+// Zorg ervoor met CSS Keyframes om een smooth Animation te maken
+// Jouw code hieronder:
+
+// Tip: https://codepen.io/CKH4/pen/zvWEda
