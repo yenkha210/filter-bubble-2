@@ -26,8 +26,8 @@
 }
 
 .header-content a {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: bold;
   padding: 25px 30px;
   border-radius: 5px;
@@ -48,8 +48,8 @@
 }
 
 .header-content p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .uitleg {
@@ -117,8 +117,8 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 50px;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .like-dislike-sec ul {
@@ -147,8 +147,26 @@
           align-items: center;
 }
 
+.like-dislike-sec ul li:last-of-type i {
+  background-color: #00f2ea;
+}
+
 .like-dislike-sec > div i {
-  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ff0050;
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
 }
 
 .like-dislike-sec p {
@@ -189,12 +207,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 40px;
-  color: black;
-  background-color: white;
   width: 70px;
   height: 70px;
+  background-color: #ff0050;
   border-radius: 50%;
+  color: white;
+  font-size: 35px;
 }
 
 .tiktok-vid form {
@@ -217,17 +235,64 @@
   cursor: pointer;
 }
 
+.tiktok-vid label:last-of-type i {
+  background-color: #00f2ea;
+}
+
 .tiktok-vid input {
   opacity: 0;
 }
 
 .tiktok-vid input:checked + i {
+  color: #272727;
+}
+
+.tiktok-vid button {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  padding: 25px 30px;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ff0050;
+  color: white;
+  border: 3px solid #ff0050;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 400px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.tiktok-vid button:hover {
+  background-color: transparent;
   color: #ff0050;
 }
 
 .tiktok-vid::-webkit-scrollbar {
   display: none;
   /* for Chrome, Safari, and Opera */
+}
+
+.duik-pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 50px;
+  width: 560px;
+  background-color: #F9C600;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+}
+
+.duik-pop-up h2 {
+  font-size: 34px;
+  line-height: 37px;
 }
 
 * {
@@ -257,5 +322,9 @@ a {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

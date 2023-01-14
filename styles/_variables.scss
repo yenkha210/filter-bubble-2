@@ -27,14 +27,20 @@ $trans4: .4s;
 }
 
 @mixin f18 {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 @mixin flex($direction, $gap) {
     display: flex;
     flex-direction: $direction;
     gap: $gap;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @mixin btn1 {
