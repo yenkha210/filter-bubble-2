@@ -249,11 +249,30 @@
   padding: 20px;
 }
 
+@-webkit-keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .progress {
   background-color: black;
   height: 35px;
   border-radius: 5px;
   width: 100%;
+  -webkit-animation: loading 4s forwards cubic-bezier(0, 0, 0, 0);
+          animation: loading 4s forwards cubic-bezier(0, 0, 0, 0);
 }
 
 * {

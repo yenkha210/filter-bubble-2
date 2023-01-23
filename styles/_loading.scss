@@ -16,61 +16,34 @@
     border-radius: $border5;
     background-color: $white;
     padding: 20px;
-    &:after{
-      content: '';
-      display: $block;
-      width: 10%;
-      height: 20px;
-      background: $white;
-      animation: loading 15s forwards cubic-bezier(0,0,0,0);
+   
 }
+
+@keyframes loading{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 100%;
+  }
 }
+
 .progress {
     background-color: $black;
     height: 35px;
     border-radius: $border5;
     width: 100%;  
+    animation: loading 4s forwards cubic-bezier(0,0,0,0);
 }
+
+
+
 
 // Zorg ervoor met CSS Keyframes om een smooth Animation te maken
 // Jouw code hieronder:
 
 
-@keyframes loading{
-  0%{
-    width: 0
-  }  
-  10%{
-    width: 5%;
-  }
-  20%{
-    width: 15%
-  }
-  30%{
-    width: 25%
-  }
-  40%{
-    width: 30%
-  }
-  50%{
-    width: 44%
-  }
-  60%{
-    width: 50%
-  }
-  70%{
-    width: 72%
-  }
-  80%{
-    width: 84%
-  }
-  90%{
-    width: 92%
-  }
-  100%{
-    width: 100%
-  }
-}
-  
+
+
 
 // Tip: https://codepen.io/CKH4/pen/zvWEda
