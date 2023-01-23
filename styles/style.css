@@ -1,8 +1,6 @@
 .index-body {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
   padding-bottom: 0px;
   height: 100vh;
@@ -13,82 +11,42 @@
 }
 
 .header-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 30px;
   width: 500px;
   margin-top: 80px;
 }
-
-.header-content a {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: bold;
-  padding: 25px 30px;
-  border-radius: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #ff0050;
-  color: white;
-  border: 3px solid #ff0050;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  display: block;
-}
-
-.header-content a:hover {
-  background-color: transparent;
-  color: #ff0050;
-}
-
 .header-content p {
   font-size: 20px;
   line-height: 32px;
 }
 
 .uitleg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 50px;
   margin-top: -50px;
   padding: 50px 0px;
   overflow: auto;
   color: black;
 }
-
 .uitleg article {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 30px;
   background-color: white;
   border-radius: 5px;
   border: 10px solid #00f2ea;
 }
-
 .uitleg article:nth-of-type(2) {
   border: 10px solid #ff0050;
 }
-
 .uitleg img {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column-start: 2;
   grid-column-end: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   grid-row-end: 4;
   width: 100%;
   height: 370px;
@@ -96,10 +54,8 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .uitleg p {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 2;
 }
 
@@ -115,60 +71,60 @@
   opacity: 0.8;
 }
 
+.aan-de-slag {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  overflow: hidden;
+  transition: 0.2s;
+  border: 2px solid white;
+}
+
+.aan-de-slag:hover {
+  color: white;
+  background: #fE2C55;
+  box-shadow: 0 0 10px #fE2C55, 0 0 40px #fE2C55, 0 0 80px #fE2C55;
+  transition-delay: 0.2s;
+  border: 2px solid transparent;
+}
+
 .main-body {
   height: 100vh;
 }
 
 .like-dislike-sec {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
   font-size: 20px;
   line-height: 32px;
 }
-
 .like-dislike-sec ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 50px;
   list-style: none;
 }
-
 .like-dislike-sec ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .like-dislike-sec ul li:last-of-type i {
   background-color: #00f2ea;
 }
-
 .like-dislike-sec > div i {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   background-color: #ff0050;
@@ -176,45 +132,30 @@
   color: white;
   font-size: 25px;
 }
-
 .like-dislike-sec p {
   margin: 100px 0px 50px 0px;
   width: 500px;
 }
-
 .like-dislike-sec video {
   width: 100%;
   border-radius: 5px;
 }
 
 .tiktok-vid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0px;
   overflow: auto;
   height: calc(100vh - 50px);
 }
-
 .tiktok-vid article {
   position: relative;
   width: 400px;
 }
-
 .tiktok-vid i {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 70px;
   height: 70px;
   background-color: #ff0050;
@@ -222,39 +163,27 @@
   color: white;
   font-size: 35px;
 }
-
 .tiktok-vid form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 30px;
   position: absolute;
   bottom: 100px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-
 .tiktok-vid label {
   cursor: pointer;
 }
-
 .tiktok-vid label:last-of-type i {
   background-color: #00f2ea;
 }
-
 .tiktok-vid input {
   opacity: 0;
 }
-
 .tiktok-vid input:checked + i {
   color: #272727;
 }
-
 .tiktok-vid button {
   font-size: 20px;
   line-height: 32px;
@@ -267,29 +196,25 @@
   background-color: #ff0050;
   color: white;
   border: 3px solid #ff0050;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 400px;
   cursor: pointer;
   margin-bottom: 50px;
 }
-
 .tiktok-vid button:hover {
   background-color: transparent;
   color: #ff0050;
 }
 
 .tiktok-vid::-webkit-scrollbar {
-  display: none;
-  /* for Chrome, Safari, and Opera */
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 .duik-pop-up {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 50px;
   width: 560px;
   background-color: #F9C600;
@@ -297,20 +222,14 @@
   color: black;
   text-align: center;
 }
-
 .duik-pop-up h2 {
   font-size: 34px;
   line-height: 37px;
 }
 
 .loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 30px;
   position: absolute;
   left: 0;
@@ -319,12 +238,8 @@
   bottom: 0;
   background: url(img/loading-screen.svg) center no-repeat;
   background-size: cover;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .bar {
@@ -344,8 +259,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -372,5 +286,4 @@ a {
 
 .none {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

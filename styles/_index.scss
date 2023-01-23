@@ -13,11 +13,6 @@
     width: 500px;
     margin-top: 80px;
 
-    a {
-        @include btn1;
-        display: block;
-    }
-
     p {
         @include f18;
     }
@@ -70,3 +65,30 @@
     height: 150px;
     opacity: 0.8;
 }
+
+.aan-de-slag {
+    display: block;
+    width: fit-content;
+    padding: 15px 30px;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 2px solid white;
+}
+
+    
+.aan-de-slag:hover
+{
+    color: #ffff;
+    background: #fE2C55;
+    box-shadow: 0 0 10px #fE2C55, 0 0 40px #fE2C55, 0 0 80px #fE2C55; 
+    transition-delay: 0.2s;
+    border: 2px solid transparent;
+}
+   
+
+
